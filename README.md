@@ -6,9 +6,9 @@
 Este é um aplicativo de gerenciamento de tarefas (Todo List) desenvolvido durante o Passaporte Tech da Real Seguro Viagem no período de dezembro/janeiro. A aplicação permite que os usuários criem, editem, marquem como concluídas e excluam tarefas de forma simples e intuitiva.
 
 ### 🛠 Tecnologias Utilizadas
-- Svelte
-- TypeScript
-- Tailwind CSS
+- Svelte 5
+- TypeScript 
+- Tailwind CSS v4.0
 - LocalStorage para persistência de dados
 
 ### ✨ Funcionalidades
