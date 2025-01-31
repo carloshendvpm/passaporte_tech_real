@@ -23,6 +23,7 @@ Este é um aplicativo de gerenciamento de tarefas (Todo List) desenvolvido duran
 ## Melhorias futuras
 - Adicionar um timer para pomodoro
 - Notificar usuários sobre tarefas(utilizando datas de fim/inicio)
+- Melhorar acessibilidade
 
 ### 🔧 Configuração do Projeto
 
