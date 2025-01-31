@@ -102,19 +102,23 @@
   })
 </script>
 
-<div class="h-screen w-full bg-purple-700">
+<div class="h-screen w-full">
   <div class="container mx-auto py-8 px-4">
     <Header/>
     <TodoForm {addTodo}/>
     <div class="flex gap-4 my-6 border-b border-neutral-200">
       {#each ['todo', 'all','done'] as status}
         <button
-          class="relative pb-2 px-1 text-neutral-50 hover:text-neutral-200/80 transition-colors cursor-pointer hover:border-b-2"
+          class="relative pb-2 px-1 text-neutral-50 hover:text-neutral-200/80 transition-colors border-b-2 border-transparent cursor-pointer hover:border-neutral-50"
           class:text-purple-600={currentStatus === status}
           class:border-b-2={currentStatus === status}
+          class:opacity-50={currentStatus !== status}
           onclick={() => currentStatus = status as Status}
         >
           {status.charAt(0).toUpperCase() + status.slice(1)}
+          {#if currentStatus === status}
+            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-neutral-50 animate-underline" ></span>
+          {/if}
         </button>
       {/each}
     </div>

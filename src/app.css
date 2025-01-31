@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 body {
-  @apply bg-purple-700 h-screen w-full;
-}
+  @apply bg-[#8628FD] h-screen w-full;
+} 
