@@ -1,38 +1,66 @@
-# sv
+# Todo App 📝
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## 🚀 Projeto Desenvolvido no Passaporte Tech - Real Seguro Viagem
 
-## Creating a project
+### Descrição do Projeto
+Este é um aplicativo de gerenciamento de tarefas (Todo List) desenvolvido durante o Passaporte Tech da Real Seguro Viagem no período de dezembro/janeiro. A aplicação permite que os usuários criem, editem, marquem como concluídas e excluam tarefas de forma simples e intuitiva.
 
-If you're seeing this, you've probably already done this step. Congrats!
+### 🛠 Tecnologias Utilizadas
+- Svelte
+- TypeScript
+- Tailwind CSS
+- LocalStorage para persistência de dados
 
+### ✨ Funcionalidades
+- Adicionar novas tarefas
+- Editar tarefas existentes
+- Marcar tarefas como concluídas
+- Excluir tarefas
+- Filtrar tarefas por status (Todas, Pendentes, Concluídas)
+- Persistência de dados no LocalStorage
+- Dica inicial para novos usuários
+
+## Melhorias futuras
+- Adicionar um timer para pomodoro
+- Notificar usuários sobre tarefas(utilizando datas de fim/inicio)
+
+### 🔧 Configuração do Projeto
+
+#### Pré-requisitos
+- Node.js (versão 22 ou superior)
+- npm ou yarn
+
+#### Instalação
+1. Clone o repositório
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.seu-usuario/tpassaporte_tech_real.git
 ```
 
-## Developing
+2. Instale as dependências
+```bash
+cd passaporte_tech_real
+npm install
+# ou
+yarn install
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+3. Inicie o servidor de desenvolvimento
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# ou
+yarn dev
 ```
 
-## Building
+### 🌟 Recursos Especiais
+- Interface responsiva
+- Armazenamento local das tarefas
+- Alerta de boas-vindas para novos usuários
+- Contagem de tarefas concluídas
 
-To create a production version of your app:
+### 📸 Captura de Tela
+![image](https://github.com/user-attachments/assets/04ca121e-dd4d-4cb9-9880-bf87cf9276a7)
 
-```bash
-npm run build
-```
 
-You can preview the production build with `npm run preview`.
+---
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+**Desenvolvido durante o Passaporte Tech - Real Seguro Viagem (Dezembro/Janeiro)**
