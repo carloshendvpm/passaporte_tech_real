@@ -12,7 +12,7 @@
     removeTodo: (id: string) => void;
     editTodo: (e: Event) => void;
   } = $props();
-  $inspect(todos)
+  
 </script>
 <section class="flex flex-col gap-4 mt-4">
   {#each todos as todo, i (todo.id)}

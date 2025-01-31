@@ -109,9 +109,10 @@
     <div class="flex gap-4 my-6 border-b border-neutral-200">
       {#each ['todo', 'all','done'] as status}
         <button
-          class="relative pb-2 px-1 text-neutral-50 hover:text-neutral-200/80 transition-colors cursor-pointer hover:border-b-2"
+          class="relative pb-2 px-1 text-neutral-50 hover:text-neutral-200/80 transition-colors cursor-pointer border-b-2 border-transparent hover:border-b-2 hover:border-neutral-50"
           class:text-purple-600={currentStatus === status}
-          class:border-b-2={currentStatus === status}
+          class:border-neutral-50={currentStatus === status}
+          class:opacity-50={currentStatus !== status}
           onclick={() => currentStatus = status as Status}
         >
           {status.charAt(0).toUpperCase() + status.slice(1)}
