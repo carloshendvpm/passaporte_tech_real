@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Todo } from "$lib/types";
-  import { fade } from "svelte/transition";
+  import { slide } from "svelte/transition";
   let {
     todos,
     toggleDone,
@@ -15,7 +15,7 @@
 </script>
 <section class="flex flex-col gap-4 mt-4">
   {#each todos as todo, i (todo.id)}
-     <div class:opacity-50={todo.done} transition:fade={{ duration: 300 }}  class="bg-neutral-50 w-full py-4 px-4 rounded-md shadow-md border-2 border-neutral-200">
+     <div class:opacity-50={todo.done} transition:slide={{ duration: 300 }}  class="bg-neutral-50 w-full py-4 px-4 rounded-md shadow-md border-2 border-neutral-200">
         <div class="flex items-center gap-2">
           <input onchange={() => toggleDone(todo)} data-index={i} checked={todo.done} class="w-6 h-6 shadow-lg rounded-full mr-2 cursor-pointer transition-all hover:border-purple-700 accent-red-100 appearance-none border-2  checked:bg-[#8628FD]" type="checkbox" name="" id="">
           <div class="flex flex-col w-full">
@@ -41,7 +41,7 @@
             </button>
             </div>
             <div class="h-3">
-              <span class="select-none text-xs flex items-center" transition:fade={{ duration: 300 }}  class:hidden={!todo.doneAt}>
+              <span class="select-none text-xs flex items-center" transition:slide={{ duration: 300 }}  class:hidden={!todo.doneAt}>
                 ✅ Finished at:
                 {todo.doneAt?.toLocaleDateString('pt-BR', {
                   year: 'numeric',
